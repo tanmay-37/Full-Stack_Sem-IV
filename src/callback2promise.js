@@ -5,7 +5,7 @@ import { getDirName } from './util.js'; // importing named function getDirName
 const __dirname = getDirName();
 console.log(__dirname);
 
-const readFilePromise = async (filename) => {
+const readFilePromise = (filename) => {
   return new Promise((resolve, reject) => {
     readFile(filename, 'utf8', (err, data) => {
       if (err) {
